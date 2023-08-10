@@ -1,4 +1,6 @@
 import java.util.ArrayList; //Importa ArrayList (listas dinámicas)
+import java.util.HashMap;
+import java.util.*;
 /*
 PascalCase - CadaPalabraVaConMayuscula -> Nombre de archivos y nombres de clases
 javac NombreArchivo.java -> compilar
@@ -175,8 +177,29 @@ public class Intro {
             System.out.println(miArreglo[posicion]);
         }
 
-        int numerito = 9;
-        if(numerito % 3 == 0)
+        // int numerito = 9;
+        // if(numerito % 3 == 0)
+
+        HashMap<String, String> estudiante = new HashMap<String, String>();
+        estudiante.put("nombre", "Elena");
+        estudiante.put("apellido", "De Troya");
+        estudiante.put("email", "elena@codingdojo.com");
+
+        /*
+        estudiante = {
+            nombre: "Elena",
+            apellido: "De Troya",
+            email: "elena@codingdojo.com"
+        }
+         */
+
+        System.out.println(estudiante.get("apellido"));
+        
+        Set<String> claves = estudiante.keySet();
+        for(String clave:claves) {
+            System.out.println(clave+":"+estudiante.get(clave));
+        }
+
 
     }
 
