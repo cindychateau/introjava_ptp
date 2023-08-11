@@ -32,6 +32,10 @@ class VehiculoTest {
         System.out.println(barco.toString());
         System.out.println(barco);
 
+        Vehiculo.queHace();
+
+        barco.queHace();
+
     }
 
 }

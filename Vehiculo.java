@@ -8,6 +8,8 @@ class Vehiculo {
     private String color;
     private int ruedas; //Integer -> funciones extra
 
+    public static String proposito = "Transporte";
+
     /* Constructor - Inicializa nuestro objeto */
     public Vehiculo() {}
 
@@ -86,6 +88,10 @@ class Vehiculo {
 
     public int getRuedas() {
         return this.ruedas;
+    }
+
+    public static void queHace() {
+        System.out.println("mueven a gente");
     }
 
 }
